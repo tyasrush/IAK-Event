@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">IAKExample</string>
-    <string name="lorem_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum tortor. Duis vulputate tristique risus ac fermentum. Etiam rutrum gravida nunc, id mollis nunc hendrerit finibus. Etiam convallis ultricies luctus. Etiam interdum scelerisque nunc, feugiat faucibus augue fringilla ut. Curabitur at tempus lorem. Nunc tincidunt diam sed nibh gravida porttitor. Aliquam erat volutpat. Suspendisse vel commodo quam. Nam in molestie erat.</string>
+    <string name="lorem_dummy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum tortor. Duis vulputate tristique risus ac fermentum. Etiam rutrum gravida nunc, id mollis nunc hendrerit finibus. Etiam convallis ultricies luctus. Etiam interdum scelerisque nunc, feugiat faucibus augue fringilla ut. Curabitur at tempus lorem.</string>
 </resources>

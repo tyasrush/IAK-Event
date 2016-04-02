@@ -12,10 +12,10 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/image_latian"
+            android:layout_height="200dp"
             android:contentDescription="@string/app_name"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_latian" />
 
         <TextView
             android:layout_width="match_parent"
@@ -41,8 +41,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:maxLines="4"
                 android:gravity="end"
+                android:maxLines="4"
                 android:text="Property Post"
                 android:textAppearance="?android:textAppearanceSmall" />
         </LinearLayout>
@@ -53,6 +53,19 @@
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:text="@string/lorem_dummy"
             android:textAppearance="?android:textAppearanceSmall" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:text="Post a Comment"
+                android:textColor="?colorPrimary" />
+        </RelativeLayout>
 
     </LinearLayout>
 </RelativeLayout>
