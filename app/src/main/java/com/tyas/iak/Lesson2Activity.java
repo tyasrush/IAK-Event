@@ -12,15 +12,26 @@ import java.text.DecimalFormat;
 
 public class Lesson2Activity extends AppCompatActivity {
 
+    int quantity = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2);
     }
 
+    public void increment(View view) {
+        quantity = quantity + 1;
+        display(quantity);
+    }
+
+    public void decrement(View view) {
+        quantity = quantity - 1;
+        display(quantity);
+    }
+
     public void submitOrder(View view) {
-        display(3);
-        displayPrice(2 * 5);
+        displayPrice(quantity * 5);
     }
 
     public void display(int number) {
@@ -30,7 +41,7 @@ public class Lesson2Activity extends AppCompatActivity {
 
     public void displayPrice(int number) {
         TextView textView = (TextView) findViewById(R.id.price_text_view);
-        textView.setText(DecimalFormat.getCurrencyInstance().format(number));
+        textView.setText("Price : " + DecimalFormat.getCurrencyInstance().format(number) + "\nThank you!");
     }
 
 
