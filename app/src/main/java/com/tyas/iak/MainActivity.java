@@ -29,17 +29,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent intent = null;
-        if (v.getId() == lesson1Button.getId())
+        if (v.getId() == lesson1Button.getId()) {
             intent = new Intent(this, Lesson1Activity.class);
+            startActivity(intent);
+        }
 
-        if (v.getId() == lesson2Button.getId())
+        if (v.getId() == lesson2Button.getId()) {
             intent = new Intent(this, Lesson2Activity.class);
+            startActivity(intent);
+        }
 
 //        if (v.getId() == lesson3Button.getId())
 //            Toast.makeText(this, "Belum ada action", Toast.LENGTH_SHORT).show();
 //            intent = new Intent(this, Lesson1Activity.class);
 
-        startActivity(intent);
+
 
     }
 }

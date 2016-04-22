@@ -36,7 +36,7 @@ public class Lesson2Activity extends AppCompatActivity {
 
     public void display(int number) {
         TextView textView = (TextView) findViewById(R.id.quantity_text_view);
-        textView.setText("" + number);
+        textView.setText(String.valueOf(number));
     }
 
     public void displayPrice(int number) {
