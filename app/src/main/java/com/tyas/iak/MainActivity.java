@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button lesson1Button;
     private Button lesson2Button;
     private Button lesson3Button;
+    private Button ringkasanButton;
+    private Button fiveThingsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lesson1Button = (Button) findViewById(R.id.btn_lesson_1);
         lesson2Button = (Button) findViewById(R.id.btn_lesson_2);
         lesson3Button = (Button) findViewById(R.id.btn_lesson_3);
+        ringkasanButton = (Button) findViewById(R.id.btn_ringkasan);
+        fiveThingsButton = (Button) findViewById(R.id.btn_ex_5);
         lesson1Button.setOnClickListener(this);
         lesson2Button.setOnClickListener(this);
         lesson3Button.setOnClickListener(this);
+        ringkasanButton.setOnClickListener(this);
+        fiveThingsButton.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +45,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (v.getId() == lesson3Button.getId()) {
             intent = new Intent(this, Lesson3Activity.class);
+        }
+
+        if (v.getId() == ringkasanButton.getId()) {
+            intent = new Intent(this, ContohListActivity.class);
+        }
+
+        if (v.getId() == fiveThingsButton.getId()) {
+            intent = new Intent(this, FiveThingsActivity.class);
         }
 
         startActivity(intent);

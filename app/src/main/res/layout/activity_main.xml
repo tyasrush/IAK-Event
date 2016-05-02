@@ -29,4 +29,20 @@
         android:background="@null"
         android:text="Lesson 3 (Object Oriented Programming)"
         android:textColor="?colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_ringkasan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="Ringkasan Project"
+        android:textColor="?colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_ex_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="5 Things App"
+        android:textColor="?colorPrimary" />
 </LinearLayout>
